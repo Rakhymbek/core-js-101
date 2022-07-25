@@ -227,7 +227,7 @@ function toNumber(value, def) {
     return def;
   }
   if (typeof +value === 'number' || value instanceof Number) {
-    return Math.floor(value);
+    return +(value);
   }
   return def;
 }
